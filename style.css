@@ -1,0 +1,12 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+input[name="message"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  width: 200px;
+  height: 200px; /* Set the height to match the width */
+}
