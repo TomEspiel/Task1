@@ -38,19 +38,19 @@
     <h1>Contact Form</h1>
     <label for="First Name">First Name</label>
     <br />
-    <input type="text" name="First Name" id="" />
+    <input type="text" name="First Name" id="firstName" />
     <br />
     <label for="Last Name">Last Name</label>
     <br />
-    <input type="text" name="Last Name" id="" />
+    <input type="text" name="Last Name" id="lastName" />
     <br />
     <label for="Email">Email</label>
     <br />
-    <input type="text" name="Email" id="" />
+    <input type="text" name="Email" id="email" />
     <br />
     <label for="Contact Number">Contact Number</label>
     <br />
-    <input type="text" name="Contact Number" id="" />
+    <input type="number" name="Contact Number" id="contactNumber" />
     <br />
     <br />
     <div>
@@ -72,10 +72,11 @@
     </div>
     <div class="message-box" id="messageBox">
       <h2>Message</h2>
-      <input type="text" name="message" id="" />
+      <input type="text" name="message" id="message" />
       <br />
-      <button onclick="">Send Inquiry</button>
-      <button onclick="">Reset</button>
+      <button onclick="sendInquiry()">Send Inquiry</button>
+      <button onclick="resetForm()">Reset</button>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
