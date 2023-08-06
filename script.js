@@ -18,6 +18,12 @@ function sendInquiry() {
   const messengerLink = `https://www.facebook.com/callmEsmayl?mibextid=ZbWKwL${fbPageUsername}?ref=${encodeURIComponent(
     inquiryMessage
   )}`;
+  if (!firstName || !lastName || !email || !contactNumber || !message) {
+    alert("Please fill in all required fields before sending the inquiry.");
+    // Highlight the empty textboxes
+
+    return;
+  }
 
   // Redirect the user to the Facebook Messenger link
   window.location.href = messengerLink;
